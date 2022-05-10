@@ -29,7 +29,7 @@ for product_row in range(2,product_list.max_row + 1):
         inventory_value_for_each_company[company_name] = inventory_value
 
     product_list.cell(product_row,5).value=product_list.cell(product_row,2).value * product_list.cell(product_row,3).value
-    inventory_price = product_list.cell(product_row,5).value
+   
     inventory_file.save("new_inventory_file.xlsx")
         
 print(product_inventory_less_than_10)
